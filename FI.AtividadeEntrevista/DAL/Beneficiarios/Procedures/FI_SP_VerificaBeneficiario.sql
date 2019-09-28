@@ -1,0 +1,7 @@
+﻿CREATE PROC FI_SP_VerificaBeneficiario
+	@IdCliente int,
+	@CPF VARCHAR(14)
+AS
+BEGIN
+	SELECT 1 FROM BENEFICIARIOS WHERE CPF = @CPF AND IDCLIENTE = @IdCliente
+END
